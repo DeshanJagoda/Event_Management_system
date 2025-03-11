@@ -1,0 +1,72 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navi {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.navi a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Media Query for screens with a width of 800px or less */
+@media screen and (max-width: 800px) {
+    .navi a {
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for screens with a width of 600px or less */
+@media screen and (max-width: 600px) {
+    .navi {
+        text-align: left;
+    }
+
+    .navi a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
+    }
+
+    .navi a:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
+/* Media Query for screens with a width of 400px or less */
+@media screen and (max-width: 400px) {
+    .navi {
+        padding: 5px;
+    }
+
+    .navi a {
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+}
