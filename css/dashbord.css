@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #4CAF50;
+}
+
+table a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+table a:hover {
+    background-color: #3e8e41;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}
+
+#clock {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: blue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    table a {
+        padding: 11px 15px;
+    }
+
+    #clock {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    table a {
+        padding: 10px 14px;
+    }
+
+    #clock {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    table a {
+        padding: 8px 12px;
+    }
+
+    #clock {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 95%;
+    }
+
+    th, td {
+       
+    }
+
+    table a {
+        
+    }
+
+    #clock {
+        
+    }
+}

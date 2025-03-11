@@ -1,0 +1,254 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 98%;
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allEvent {
+    width: 29%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 5px #999999;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+    
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.allEvent:hover {
+    box-shadow: 3px 3px 8px #2e2e2e;
+    transform: translateY(-5px);
+    transform: translateX(-5px);
+    transform: scale(1.02);
+
+}
+
+.allEvent h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.allEvent a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.allEvent a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.allEvent p {
+    margin-bottom: 20px;
+}
+.ButnUp{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.ButnUp:hover {
+    background-color: #0069d9;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.ButnDE{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.ButnDE:hover {
+    background-color: #d80000;
+    box-shadow: 3px 3px 5px gray;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+.selectdate{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #09a009a1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 5px gray;
+}
+.selectdate form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;   
+    width: 80%;
+}
+
+.selectdate form input,label{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.selectdate form input[type="date"]{
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.selectdate input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    margin: 3px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.selectdate input[type="submit"]:hover {
+    background-color: #0069d9;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.selectdate button{
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    margin: 3px;    
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.selectdate button:hover {
+    background-color: #d80000;
+    box-shadow: 3px 3px 5px gray;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 98%;
+        margin: 5px;
+    }
+
+    .allEvent {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .allEvent h2 {
+        font-size: 20px;
+    }
+    .allEvent p {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 98%;
+        margin: 5px;
+    }
+
+    .allEvent {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .allEvent h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .allEvent p {
+        font-size: 16px;
+    }
+}   
+
+/* Media Query for screens with a width of 600px or less */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin: 5px;
+    }
+
+    .allEvent {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+
+    .allEvent h2 {
+        font-size: 18px;
+    }
+
+    .allEvent p {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0 10px;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        color: #333;
+    }
+}
+
+/* Media Query for screens with a width of 400px or less */
+@media screen and (max-width: 400px) {
+    .container {
+        width: 95%;
+        margin: 5px;
+    }
+
+    .allEvent {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .allEvent h2 {
+        font-size: 16px;
+    }
+
+    .allEvent p {
+        font-size: 12px;
+    }
+
+    body {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+}
